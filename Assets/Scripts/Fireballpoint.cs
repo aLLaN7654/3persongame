@@ -8,6 +8,11 @@ public class Fireballpoint : MonoBehaviour
     public Camera cameraLink;
     public float targetInSkyDistane;
 
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
     private void Update()
     {
 
